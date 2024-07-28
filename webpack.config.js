@@ -13,6 +13,15 @@ module.exports = {
     },
     // contentBase: path.join(__dirname, "dist"),
     compress: true,
-    port: 3500,
+    port: 3600,
+  },
+  //loader
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        use: ["style-loader", "css-loader"],
+      },
+    ],
   },
 };
